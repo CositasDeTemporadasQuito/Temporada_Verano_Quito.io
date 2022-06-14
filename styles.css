@@ -91,9 +91,10 @@ nav .profile-link{
 
 }
 nav .profile-link a{
-    color: var(--just-white);
+    color: var(--warm-black);
     border-bottom: 1px solid rgb(131, 127, 208);
     font-weight: bold;
+    text-decoration: none;
 }
 
 /*Estilo del logo*/
@@ -199,7 +200,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 5px gray;
-    transform: rotate(-90deg);
+    
     
 }
 .main-exchange-container h2 {
@@ -249,29 +250,24 @@ main {
 .currency-table-container .img{
     width: 200px;
     height: 200px;
-    
     border-radius: 20px;
 }
 .img_1:hover{
-    transform: scale(1.2) rotate(270deg);
+    transform: scale(1.2) ;
     margin-block-end: 15px;
     margin-block-start: 10px;
     border-radius: 20px;
 }
-.img_1{
-    transform: rotate(270deg);
-}
+
 .img_2:hover{
     transform: scale(1.2);
     margin-block-end: 15px;
     margin-block-start: 10px;
     border-radius: 20px;
 }
-.img_3 {
-    transform: rotate(270deg);
-}
+
 .img_3:hover{
-    transform: scale(1.2) rotate(270deg);
+    transform: scale(1.2);
     margin-block-end: 15px;
     margin-block-start: 10px;
     border-radius: 20px;
@@ -663,12 +659,18 @@ button {
 
 /*estilos de foto del home menu*/
 .product-menu-title{
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--text-secundary);
     font-weight: bolder;
     text-align: center;
     margin-block-end: 10px;
     margin-block-start: 20px;
+}
+.bkz_niñas{
+    color: var(--secundary-background);
+}
+.bkz_niños{
+    color: var(--text-terciary);
 }
 .wapper-menu-grid{
     display: grid;
@@ -686,6 +688,11 @@ button {
     height: 100%;
     object-fit: contain;
     border-radius: 5px;
+}
+.wapper-menu-item img:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    
 }
 
 
