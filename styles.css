@@ -7,12 +7,17 @@
 color https://color.adobe.com/explore
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 
 :root {
     /* colores*/
-    --bitcoin-orange:#F7931A;
-    --soft-orange:#FFE9D4;
-    --secundary-blue:#1A9AF7;
+    
+    --Text-primary:#ECF0F1;
+    --text-secundary: #23606E;
+    --text-terciary:#008F8C;
+    --primary-background:white;
+    --secundary-background:#FACFCE;
     --soft-blue:#E7F5FF;
     --warm-black:#201E1C;
     --black:#282623;
@@ -28,12 +33,11 @@ color https://color.adobe.com/explore
 
 }
 html {
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 62.5%;
 }
 body{
-    background-color: rgb(13, 56, 74, 99%) ;
+    background-color: var(--just-white) ;
 }
 /*Estilo del contenedor header*/
 header {
@@ -45,18 +49,15 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background-color: #024959;
-    /*
-    background: rgb(2,0,36);
-    background: linear-gradient(31deg, rgba(2,0,36,1) 13%, rgba(9,9,121,1) 68%, rgba(0,212,255,1) 100%);
-   */
+    background-color: var(--primary-background);
+   
     
 }
 header .header-icons-container{
     width: 100%;
     height: 70px;
     display: grid;
-    background-color: rgba(9,9,121,1) 68%;
+    background-color: var(--warm-black);
 }
 header .header-icons-container .icons{
     width: 300px;
@@ -69,12 +70,12 @@ header .header-icons-container .icons{
     margin-right: 30px;
 }
 header .icons span{
-    color: white;
+    color: var(--just-white);
 }
 .icons a {
     text-decoration: none;
     display: inline;
-    color: black;
+    color: var(--just-white);
 }
 nav{
     display: grid;
@@ -90,10 +91,9 @@ nav .profile-link{
 
 }
 nav .profile-link a{
-    color: white;
+    color: var(--just-white);
     border-bottom: 1px solid rgb(131, 127, 208);
     font-weight: bold;
-    
 }
 
 /*Estilo del logo*/
@@ -105,8 +105,9 @@ nav .profile-link a{
 }*/
 
 .title_Headers{
-    color: #F2C12E;
-    font-size: 3rem;
+    color: var(--text-secundary);
+    font-size: 3.5rem;
+    font-family: 'Lora', serif;
 
 }
 
@@ -123,23 +124,18 @@ nav .profile-link a{
     align-self: center;
 }
 .header--title-container h1 {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-weight: bold;
     line-height: 2.6rem;
-    /*
-    color: var(--just-white);
-    */
-    color: #F2AE30;
+    color: var(--text-terciary);
+   
 }
 .header--title-container p {
     margin-top: 25px;
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.8rem;
-    /*
-    color: var(--soft-orange);
-    */
-    color: #F2AE30;
+    color: var(--just-white);
 }
 .header--title-container .header--button{
     position: absolute;
@@ -154,51 +150,37 @@ nav .profile-link a{
     margin-top: 35px;
     width: 225px;
     height: 45px;
-    /*
-    background-color: var(--off-white);
-    */
-    background-color: #A64F03 ;
+ 
+    background-color: var(--secundary-background);
     /*Sombras*/
     box-shadow: 0px 4px 8px rgba(89, 73, 0.16);
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: bold;
+    padding-left: 5px;
     text-decoration: none;
-    /*
-    color: var(--black)  ;
-    */
-    color: white;
+    color: var(--text-secundary);
 }
-.header--button span {
-    display: inline-block;
-    width: 13px;
-    height: 8px;
-    margin-left: 8px;
-    background-image: url("./")
-}
+
 
 /*EStilo a mi primer contenedor main*/
 
 main {
     width:100% ;
     height: auto;
-   /* background-color: var(--off-white);*/
-   
-
 }
 
 .main-exchange-container {
+    border-top: 2px solid black;
     width: 100%;
     min-width: 320px;
     height: auto;
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: #024959;
-    /*
-    background-color: rgb(13, 56, 74, 99%) ;
-    */
+    background-color: var(--just-white);
+   
 }
 .main-exchange-container-title {
     width: 90%;
@@ -461,19 +443,21 @@ main {
     margin: 0 auto;
     height: auto;
     padding:  20px 10px;
-    background-color: rgb(13, 56, 74, 99%) ;
-   /* background-color: #172026; */
-   /* background-color:var(--warm-black);*/   /*fondo contenedor*/
+    background-color: var(--just-white) ;
     font-family: 'DM Sans', sans-serif  ;
 }
-.product-detail--batata-logo {
-    position: absolute;
-    width: 40px;
-    height: 25px;
+.product-detail--logo {
+    
+    width: 320px;
+    min-width: 180px;
+    height: 325px;
+    border-radius: 10px;
+    margin-block-end: 10px;
     top:  -10px;
     left: 50%;
-    background-image: url(./assets/icons/batata.svg);
-
+}
+.product-detail--logo:hover{
+    animation: 3s linear 1s infinite running slidein;
 }
 .product-detail--title {
     width: 90%;
@@ -485,17 +469,17 @@ main {
 }
 .product-detail--title h2 {
     margin-bottom: 20px;
-    font-size: 2.4rem;
-    font-weight: bold;
+    font-size: 2.7rem;
+    font-weight: bolder;
     line-height: 2.6rem;
-    color: var(--just-white);
+    color: var(--text-secundary);
 }
 .product-detail--title p {
     margin-bottom:  20px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--text-terciary);
 }
 /*Contenedor 1*/
 .product-detail--card {
@@ -505,7 +489,7 @@ main {
     height:150px ;
     margin: 15px auto;
     padding: 15px;
-    background-color: var(--black);  /*fondo hijos contenedor*/
+    background-color: var(--secundary-background);  /*fondo hijos contenedor*/
     border-radius: 5px;
     box-shadow:  0 4px 8px rgba(0 , 0, 0 , 0.16);
 }
@@ -523,7 +507,7 @@ main {
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
-    color: var(--just-white);
+    color: var(--text-secundary);
 }
 .product--card-body {
     font-size: 1.4rem;
@@ -533,11 +517,15 @@ main {
 }
 /*contenedor 1*/
 .clock {
-    background-image: url(./assets/icons/clock.svg);
+    background-image: url(./assets/Iconos-redes/servientrega-esto-deberias-saber-antes-de-integrar.jpg);
 }
 /*Contenedor 2*/
-.eye {
-    background-image: url(./assets/icons/eye.svg);
+.eye{
+    background-image: url(./assets/Iconos-redes/rappi.png);
+}
+.eye1 {
+    border-radius: 5px;
+    background-image: url(./assets/Iconos-redes/pedidosya-logo.png);
 }
 
 /*Contenedor 3*/
@@ -559,7 +547,7 @@ main {
     margin-block-start: 10px;
     margin: 0 auto;
     height: 60vh;
-    background-image: url("./assets/img/medium.jpg");
+    background-image: url("./assets/img/Dia\ del\ padre.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -578,15 +566,12 @@ main {
     max-width: 900px;
     margin: 0 auto;
     margin-block-start: 10px;
+    margin-block-end: 10px;
 }
 .container_new_blok{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
-    /*display: grid;
-    grid-template-columns: minmax(300px, 2fr);
-    grid-auto-rows: 400px;*/
     border-bottom: 1px solid #ddd;
 }
 .container_new_blok-info {
@@ -596,7 +581,7 @@ main {
 }
 .info-title{
     color: var(--warm-black);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 .info-subtitle{
@@ -607,17 +592,32 @@ main {
     margin-block-end: 2.4rem;
     text-align: justify;
 }
-.info-button{
+button {
     border: none;
-    border-radius: 2rem;
-    background-color: var(--bitcoin-orange);
-    font-weight: bolder;
-    padding: 12px 24px;
 }
-.info-button a{
-    color: var(--warm-black);
-    text-decoration: none;
+.myButton{
+	box-shadow: 3px 4px 0px 0px #354b78;
+	background:linear-gradient(to bottom, #6a91e6 5%, #17397d 100%);
+	background-color:#6a91e6;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ede4ed;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	
 }
+.myButton:hover {
+	background:linear-gradient(to bottom, #17397d 5%, #6a91e6 100%);
+	background-color:#17397d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 
 .container_new_blok-image{
@@ -664,11 +664,11 @@ main {
 /*estilos de foto del home menu*/
 .product-menu-title{
     font-size: 2rem;
-    color: #F2AE30;
+    color: var(--text-secundary);
     font-weight: bolder;
     text-align: center;
     margin-block-end: 10px;
-    margin-block-start: 10px;
+    margin-block-start: 20px;
 }
 .wapper-menu-grid{
     display: grid;
@@ -898,11 +898,7 @@ footer {
     min-width: 320px;
     height: 150px;
     border-top:2px solid #2D3E40 ;
-    background: rgb(2,0,36);
-    background: linear-gradient(31deg, rgba(2,0,36,1) 13%, rgba(9,9,121,1) 68%, rgba(0,212,255,1) 100%);
-   
- /*   background-color: #027373; */
-   /* background-color: var(--bitcoin-orange);*/
+    background-color: var(--secundary-background);
 }
 footer section {
     display: flex;
@@ -921,7 +917,7 @@ footer .left ul {
 }
 .left a {
     text-decoration: none;
-    color: var(--just-white);
+    color: var(--text-secundary);
 }
 
 .right a{
@@ -934,7 +930,7 @@ footer .left ul {
     line-height: 1.8rem;
 }
 .right a h2{
-    color: var(--just-white);
+    color: var(--text-terciary);
     margin-block-end: 5px;
     font-size: 1.4rem;
 }
@@ -945,6 +941,6 @@ footer .left ul {
     margin-block-end: 5px;
 }
 .right a p{
-    color: var(--just-white);
+    color: var(--text-terciary);
     font-size: 1.4rem;
 }

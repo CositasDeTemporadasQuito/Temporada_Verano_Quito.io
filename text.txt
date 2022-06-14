@@ -1,0 +1,5 @@
+https://htmlcolorcodes.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+font-family: 'Lora', serif;
