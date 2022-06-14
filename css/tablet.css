@@ -16,3 +16,18 @@
     max-width: 900px;
     margin: 0 auto;
 }
+.title_Headers{
+    display: none;
+}
+.header--title-container h1{
+    margin-block-start: 20px;
+    font-size: 3rem;
+}
+.logo_two{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: -60px;
+    left: 50%; 
+}

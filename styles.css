@@ -98,12 +98,22 @@ nav .profile-link a{
 }
 
 /*Estilo del logo*/
-/*header img {
-    width: 150px;
-    height: 24px;
-    margin-top: 60px;
-    align-self: center;
-}*/
+figure{
+    position: relative;
+}
+.logo_one {
+    display: none;
+}
+.logo_two{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    top: -40px;
+    left: 10px; 
+}
+
+
 
 .title_Headers{
     color: var(--text-secundary);
@@ -129,8 +139,21 @@ nav .profile-link a{
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--text-terciary);
-   
+    animation-duration: 3s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .header--title-container p {
     margin-top: 25px;
     font-size: 1.7rem;
@@ -190,12 +213,14 @@ main {
     margin: 0 auto;        /*centrar el texto en el centro*/
 } 
 .main-exchange-container .backgroundimg {
-    width: 200px;
+    min-width: 200px;
+    width: 320px;
+    max-width: 500px;
     height: 200px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     border-radius: 20px;
-    background-image: url("./assets/img/img\ 1.png");
+    background-image: url("./assets/img/img\ 16\ zapatos\ ware.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -549,12 +574,13 @@ main {
     background-repeat: no-repeat;
 }
 .bitcoin-img-container h2 {
-    padding-top: 60px;
+    padding-top: 100px;
     font-family:'DM Sans', sans-serif  ;
-    font-weight: 700;
-    font-size: 2.4rem;
+    font-weight: bold;
+    font-size: 2.7rem;
     text-align: center;
-    color: var(--just-white);
+    color: var(--text-secundary);
+    height: 40px;
 }
 
 /*Cuarta seccion*/
@@ -668,9 +694,15 @@ button {
 }
 .bkz_niñas{
     color: var(--secundary-background);
+    background-color: hotpink;
 }
 .bkz_niños{
-    color: var(--text-terciary);
+    color: var(--just-white);
+    background-color: var(--text-secundary);
+}
+.bkz_hombres{
+    background-color: var(--text-terciary);
+    color: var(--off-white);
 }
 .wapper-menu-grid{
     display: grid;
@@ -679,9 +711,18 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(75px, 150px));
 }
 .wapper-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #027373;
     padding: 15px;
     border-radius: 10px;
+}
+.wapper-menu-item h3{
+    color: var(--just-white);
+    margin-block-end: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
 }
 .wapper-menu-item img {
     width: 100%;
