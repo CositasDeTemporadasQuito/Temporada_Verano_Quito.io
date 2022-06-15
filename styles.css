@@ -164,13 +164,11 @@ figure{
     /*Posecionar contenedor botom*/
     top: 275px;    /*lo deja en el medio*/                 
     display: block;
-    padding: 15px;
+    padding: 12px;
     margin-top: 35px;
     width: 225px;
     height: 45px;
- 
     background-color: var(--secundary-background);
-    /*Sombras*/
     box-shadow: 0px 4px 8px rgba(89, 73, 0.16);
     border: none;
     border-radius: 5px;
