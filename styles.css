@@ -106,24 +106,17 @@ figure{
 }
 .logo_two{
     position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
+    width: 170px;
+    height: 170px;
+    border-radius: 80px;
     top: -40px;
-    left: 10px; 
+    left: 30%; 
 }
-
-
-
 .title_Headers{
     color: var(--text-secundary);
     font-size: 3.5rem;
     font-family: 'Lora', serif;
-
 }
-
-
-
 /*Estilos en div que es contenedor texto*/
 .header--title-container {
     width: 90%;
@@ -135,9 +128,10 @@ figure{
     align-self: center;
 }
 .header--title-container h1 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 2.6rem;
+    margin-block-start: 100px;
     color: var(--text-terciary);
     animation-duration: 3s;
     animation-name: slidein;
@@ -225,16 +219,31 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 5px 5px 5px gray;
-    
-    
+}
+.backgroundimg:hover{
+    transform: scale(1.2);
+    margin-block-start: 10px;
 }
 .main-exchange-container h2 {
     margin-bottom: 30px;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: bold;
-    line-height: 2.6rem;
-    /*color: var(--black);*/
-    color: #A64F03;
+    line-height: 2.8rem;
+    color: var(--text-terciary);
+}
+.main-exchange-container h2:hover{
+    animation-name: kratos;
+    transform: scale(1.4);
+}
+@keyframes kratos {
+    from {
+    margin-left: 100%;
+    width: 300%
+    }
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
 }
 .main-exchange-container p {
     margin-bottom: 30px;
@@ -463,7 +472,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     height: auto;
-    padding:  20px 10px;
+    padding:  10px 10px;
     background-color: var(--just-white) ;
     font-family: 'DM Sans', sans-serif  ;
 }
@@ -477,15 +486,13 @@ main {
     top:  -10px;
     left: 50%;
 }
-.product-detail--logo:hover{
-    animation: 3s linear 1s infinite running slidein;
-}
+
 .product-detail--title {
     width: 90%;
     min-width: 288px;
     height: auto;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
 }
 .product-detail--title h2 {
@@ -496,7 +503,7 @@ main {
     color: var(--text-secundary);
 }
 .product-detail--title p {
-    margin-bottom:  20px;
+    margin-bottom:  10px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -574,13 +581,14 @@ main {
     background-repeat: no-repeat;
 }
 .bitcoin-img-container h2 {
-    padding-top: 100px;
+    padding-top: 120px;
     font-family:'DM Sans', sans-serif  ;
     font-weight: bold;
     font-size: 2.7rem;
     text-align: center;
-    color: var(--text-secundary);
+    color: var(--black);
     height: 40px;
+    box-shadow: 10px 10px 10px var(--text-secundary);
 }
 
 /*Cuarta seccion*/
@@ -595,6 +603,17 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 1px solid #ddd;
+}
+
+.oferts-products{
+    color: var(--text-terciary);
+    border-radius: 10px;
+    background-color: var(--secundary-background);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-block-start: 15px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container_new_blok-info {
     align-self: center;
@@ -639,9 +658,6 @@ button {
 	position:relative;
 	top:1px;
 }
-
-
-
 .container_new_blok-image{
     width: 100%;
     height: 100%;
@@ -693,16 +709,19 @@ button {
     margin-block-start: 20px;
 }
 .bkz_niñas{
-    color: var(--secundary-background);
+    color: var(--just-white);
+    border-radius: 10px;
     background-color: hotpink;
 }
 .bkz_niños{
     color: var(--just-white);
+    border-radius: 10px;
     background-color: var(--text-secundary);
 }
 .bkz_hombres{
     background-color: var(--text-terciary);
     color: var(--off-white);
+    border-radius: 10px;
 }
 .wapper-menu-grid{
     display: grid;
@@ -737,213 +756,9 @@ button {
 }
 .price_model {
     padding-left: 10px;
-    
     font-size: 1.2rem;
     color: gold;
     font-weight: bolder;
-}
-
-
-
-/* Ultima seccion*/
-.main-plans-container {
-    width: 100%;
-    min-width: 320px;
-    padding-bottom: 70px;
-    text-align: center;
-    /*background-color: #027373;*/
-
-}
-/*Estilo titulo*/
-.plans--title {
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin:  0 auto;
-    margin-bottom: 50px;
-    
-}
-/*Estilo subtitulo*/
-.plans--title h2 {
-    padding-top: 50px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: #F2AE30;
-}
-/*Estilo parrafo*/
-.plans--title p {
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #757575;
-}
-
-/*Estilo de las tarjetas*/
-
-.plans-container--slider {
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-   /* background-color: #04BF9D;*/
-}
-/*prueba de scroll */
-.plans-container--slider::-webkit-scrollbar {
-    
-    width: 8px;
-    height: 8px;
-}
-.plans-container--slider::-webkit-scrollbar-thumb{
-    background-color: var(--bitcoin-orange);
-    border-radius: 4px;   
-}
-.plans-container--slider::-webkit-scrollbar-thumb:hover{
-    background: var(--bitcoin-orange);
-    box-shadow: 0 0 2px 1 px rgba(0 , 0, 0 , 0.2);
-}
-.plans-container--slider::-webkit-scrollbar-thumb:active{
-    background-color:  var(--bitcoin-orange);
-}
-.plans-container--slider::-webkit-scrollbar-track {
-    background: #e1e1e1;
-    border-radius: 4px;
-}
-.plans-container--slider::-webkit-scrollbar-track:hover,
-.plans-container--slider::-webkit-scrollbar-track:active {
-    background: #d4d4d4;
-}
-
-/*TARJETA Recomendado*/
-.plans-container--card1 {
-    position: relative;
-    scroll-snap-align: center;
-    width: 70%;  /*Poner mejor 190px */
-    min-width: 190px;
-    max-width: 300px;
-    height: 250px;   /*Poner mejor 248px*/
-    margin: 50px 5px 0;
-    padding: 0 15px;
-    /*background-color: #AFEEEE;*/
-    background-color: #E4F2E7;
-    border-radius: 15px; /*mejor 8px*/
-    box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
-}
-/*TARJETA 2*/
-.plans-container--card2 {
-    position: relative;
-    scroll-snap-align: center;
-    width: 70%;  /*Poner mejor 190px */
-    min-width: 190px;
-    max-width: 300px;
-    height: 250px;   /*Poner mejor 248px*/
-    margin: 50px 5px 0;
-    padding: 0 15px;
-    /*background-color: #4938b9c5;*/
-    background-color: #93BFB7;
-    border-radius: 15px; /*mejor 8px*/
-    box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
-
-}
-/*TARJETA 3*/
-.plans-container--card3 {
-    position: relative;
-    scroll-snap-align: center;
-    width: 70%;  /*Poner mejor 190px */
-    min-width: 190px;
-    max-width: 300px;
-    height: 250px;   /*Poner mejor 248px*/
-    margin: 50px 5px 0;
-    padding: 0 15px;
-    /*background-color: #F08080;*/
-    background-color: #387373;
-    border-radius: 15px; /*mejor 8px*/
-    box-shadow: 0 4px 8 px rgba(89, 73, 30, 0.16);
-}
-.recomendado {
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 6px;
-    top: -15px;
-    right: 0;
-    left:0; 
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #6767de;
-   /* background-color: var(--bitcoin-orange);*/
-    border-radius: 8px;
-    color: var(--just-white);
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.4rem;
-    font-family: 'Inter';
-  
-}
-
-.plan-card--title {
-    padding-top: 30px;
-    font-family: 'DM Sans';
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: black;
-}
-.plan-card--price {
-    padding:  15px 0;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 5.3rem;
-    color: black;
-
-}
-.plan-card--price span {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-    vertical-align: top;
-    
-    font-weight: 300;
-    
-}
-/*SUBTITULO CONTENEDOR 1*/
-.plan-card--saving1 {
-    font-size: 1.2rem;
-    color: #757575;
-}
-/*SUBTITULOCONTENEDOR 2*/
-.plan-card--saving2 {
-    font-size: 1.2rem;
-    color: gray;
-}
-/*SUBTITULOCONTENEDOR 2*/
-.plan-card--saving3 {
-    font-size: 1.2rem;
-    color: white;
-}
-
-.plan-card--ca {
-    width: 151px;
-    height: 48px;
-    margin-top: 20px;
-    background-color:var(--off-white) ;
-    border-radius: 4px;
-    font-family: 'DM Sans', sans-serif;
-    border: 2px solid #2D3E40;
-    /* var(--bitcoin-orange);*/
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: bold;
-    color: var(--black);
-}
-.plan-card--ca span {
-    display: inline-block;
-    width:20px ;
-    height: 20px; 
-    background-image: url(./assets/icons/orange-right-arrow.svg);
-    vertical-align: text-top;
 }
 
 /**/
@@ -952,8 +767,9 @@ footer {
     width: 100%;
     min-width: 320px;
     height: 150px;
+    border-radius: 10px;
     border-top:2px solid #2D3E40 ;
-    background-color: var(--secundary-background);
+    background-color: var(--Text-primary);
 }
 footer section {
     display: flex;

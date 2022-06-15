@@ -6,13 +6,16 @@
     margin: 0 auto;
     
 }
+.bitcoin-img-container{
+    max-width: 900px;
+    border-radius: 10px;
+}
 
 .plans-container--slider {
     justify-content: center;
 }
 .main-tables-container {
     justify-content: right;
-    /*width: 930px;*/
     max-width: 900px;
     margin: 0 auto;
 }
@@ -20,14 +23,18 @@
     display: none;
 }
 .header--title-container h1{
-    margin-block-start: 20px;
+    margin-block-start: 60px;
     font-size: 3rem;
 }
 .logo_two{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
     top: -60px;
-    left: 50%; 
+    left: 40%; 
+}
+footer{
+    max-width: 900px;
+    margin: 0 auto;
 }
