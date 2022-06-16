@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tablet.css" media="(min-width: 630px)">
+    <link rel="stylesheet" href="css/carrusel.css">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
             <div class="icons">
                 <a href="/"><span class="flaticon-001-facebook"></span></a>
                 <a href="/"><span class="flaticon-002-twitter"></span></a>
-                <a href="/"><span class="flaticon-011-instagram"></span></a>
+                <a href="https://www.instagram.com/lgpc1984/"><span class="flaticon-011-instagram"></span></a>
                 <a href="https://api.whatsapp.com/send/?phone=593998947884&text&app_absent=0"><span class="flaticon-003-whatsapp"></span></a>
                 <a href="/"><span class="flaticon-008-youtube"></span></a>
             </div>
@@ -40,13 +41,52 @@
         <div class="header--title-container">
             <h1>Aprovecha nuestros increibles preciós</h1>
             <p>Contactos</p>
-            <a href="#plans" class="header--button">Conoce nuestros productos<span></span></a>
+            <a href="#catalogo" class="header--button">Conoce nuestros productos<span></span></a>
         </div>
     </header>
+
+    <!-- Contenedor carusel -->
+    <aside class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="./assets/instagram/11.png">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./assets/instagram/1.png">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="./assets/instagram/17.png">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </aside>
 
 
     <main>
         <!-- Primera section-->
+        <!-- 
         <section class="main-exchange-container">
             
             <div class="main-exchange-container-title">
@@ -56,6 +96,7 @@
             </div>
             
         </section>
+        -->
 
         <!-- Seccion de cards-->
 
@@ -89,7 +130,7 @@
                 <img class="container_new_blok-image" src="./assets/img/img 15 shorts.png" alt="es una foto de atardecer">
             </section>
             <section class="pictures">
-                <h2 class="pictures-title">Catálogo</h2>
+                <h2 id="catalogo" class="pictures-title">Catálogo</h2>
                 <section class="pictures-grid">
                     <img class="pictures-item pictures-item_big" src="./assets/img/img 11.png" alt="foto principal 1">
                     <img class="pictures-item " src="./assets/img/img 4.png" alt="foto 2">

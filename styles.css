@@ -49,9 +49,7 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background-color: var(--primary-background);
-   
-    
+    background-color: var(--primary-background); 
 }
 header .header-icons-container{
     width: 100%;
@@ -87,7 +85,7 @@ nav .profile-link{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 30px;
 
 }
 nav .profile-link a{
@@ -146,7 +144,7 @@ figure{
       margin-left: 0%;
       width: 100%;
     }
-  }
+}
 
 .header--title-container p {
     margin-top: 25px;
@@ -179,9 +177,7 @@ figure{
     color: var(--text-secundary);
 }
 
-
 /*EStilo a mi primer contenedor main*/
-
 main {
     width:100% ;
     height: auto;
@@ -189,14 +185,16 @@ main {
 
 .main-exchange-container {
     border-top: 2px solid black;
+    max-width: 900px;
     width: 100%;
     min-width: 320px;
     height: auto;
+    margin: 0 auto;
     padding-top: 80px;
     padding-bottom: 30px;
+    margin-top: 10px;
     text-align: center;
     background-color: var(--just-white);
-   
 }
 .main-exchange-container-title {
     width: 90%;
