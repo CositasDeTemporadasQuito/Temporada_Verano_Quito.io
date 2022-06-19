@@ -666,16 +666,21 @@ button {
 /*pictures*/
 .pictures{
     max-width: 900px;
-    margin: 0 auto;
+    
 }
+.pictures .pictures-title {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 10px;
 
-.pictures-title{
-    color: #F2AE30;
+}
+.anchor-title{
+    color: var(--text-secundary);
     font-weight: bold;
     text-align: center;
-    margin-block-start: 10px;
-    font-size: 2rem;
-
+    font-size: 2.5rem;
+    text-decoration:none;
+   
 }
 .pictures-grid {
     display: grid;
