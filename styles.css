@@ -177,6 +177,7 @@ figure{
     color: var(--text-secundary);
 }
 
+
 /*EStilo a mi primer contenedor main*/
 main {
     width:100% ;
@@ -471,6 +472,7 @@ main {
     padding:  10px 10px;
     background-color: var(--just-white) ;
     font-family: 'DM Sans', sans-serif  ;
+    
 }
 .product-detail--logo {
     
@@ -508,14 +510,15 @@ main {
 /*Contenedor 1*/
 .product-detail--card {
     width: 90%;
-    /*min-width: 288px;*/
-    max-width: 400px;
+    /*min-width: 288px;
+    */max-width: 400px;
     height:150px ;
     margin: 15px auto;
     padding: 15px;
-    background-color: var(--secundary-background);  /*fondo hijos contenedor*/
-    border-radius: 5px;
-    box-shadow:  0 4px 8px rgba(0 , 0, 0 , 0.16);
+    background-color: var(--secundary-background);
+    /*fondohijoscontenedor*/border-radius: 5px;
+    box-shadow: 10px 15px 15px pink;
+    animation-direction: normal;
 }
 .product-detail--card .icon--card {
     display: inline-block;
@@ -734,9 +737,16 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #027373;
+    background-color: #191970;
     padding: 15px;
     border-radius: 10px;
+}
+.jpcard {
+    background-color: pink;
+}
+.jpcard .subtitle_Girl {
+    color: var(--warm-black);
+    font-family: 'Lora', serif;
 }
 .wapper-menu-item h3{
     color: var(--just-white);
@@ -754,6 +764,10 @@ button {
     transform: scale(1.5);
     border-radius: 20px;
     
+}
+.jpcard .valuestyles{
+    color: red;
+    margin-block-start: 2px;
 }
 .price_model {
     padding-left: 10px;
@@ -783,13 +797,25 @@ footer .left ul {
     font-weight: 500;
     line-height: 1.8rem;
     list-style: none;
+    background-color: var(--warm-black);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .left li {
     margin: 10px 0;
 }
-.left a {
+.jp-list li a {
     text-decoration: none;
-    color: var(--text-secundary);
+    color: var(--just-white);
+    font-size: 1.6rem;
 }
 
 .right a{
@@ -798,21 +824,36 @@ footer .left ul {
     align-items: center;
     text-decoration: none;
     font-size: 1.4rem;
-    font-weight: 500;
     line-height: 1.8rem;
+    background-color: var(--warm-black);
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .right a h2{
-    color: var(--text-terciary);
+    color: var(--just-white);
+    font-size: 1.8rem;
     margin-block-end: 5px;
-    font-size: 1.4rem;
+}
+.right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
 }
 .right a img{
-    width: 40px;
-    height: 40px;
-
-    margin-block-end: 5px;
+    width: 25px;
+    height: 25px;
+    order: 2;
+    
 }
 .right a p{
     color: var(--text-terciary);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    order: 1;
 }
