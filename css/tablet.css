@@ -52,13 +52,13 @@
     margin-block-start: 60px;
     font-size: 3rem;
 }
-.logo_two{
+.logo_one{
     position: absolute;
     width: 150px;
     height: 150px;
     border-radius: 90px;
     top: -60px;
-    left: 40%; 
+    left: 40%;
 }
 footer{
     max-width: 900px;

@@ -99,10 +99,10 @@ nav .profile-link a{
 figure{
     position: relative;
 }
-.logo_one {
+.logo_two {
     display: none;
 }
-.logo_two{
+.logo_one{
     position: absolute;
     width: 170px;
     height: 170px;
@@ -162,7 +162,6 @@ figure{
     /*Posecionar contenedor botom*/
     top: 275px;    /*lo deja en el medio*/                 
     display: block;
-    padding: 12px;
     margin-top: 35px;
     width: 225px;
     height: 45px;
@@ -590,6 +589,23 @@ main {
     box-shadow: 10px 10px 10px var(--text-secundary);
 }
 
+/*module-instagram*/
+.module-instagram{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-favorites{
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 /*Cuarta seccion*/
 .main-blok{
     max-width: 900px;
@@ -761,9 +777,14 @@ button {
 .wapper-menu-item p{
     color: red;
     font-weight: 700;
-    top: 35px;
+    top: 85px;
+    transform: rotate(-40deg);
     position: absolute;
-    font-size: 20px;
+    font-size: 30px;
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
 }
 .wapper-menu-item img {
     width: 100%;
