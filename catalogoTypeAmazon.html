@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cositas de temporada Quito">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/flaticon.css">
+    <title>Cositas de Temporada | Quito</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 630px)">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .Principal {
+            width: 100%;
+        }
+        .grid_module {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            margin:  0 auto;
+        }
+        .container1{
+            width: auto;
+            display: flex;
+            padding-bottom: 10px;
+            height: auto;
+            border-right:  solid 1px #d5dbdb;
+            border-bottom: solid 1px #d5dbdb;
+            position: relative;
+            padding: 16px;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .container2 {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            max-width: 320px;
+        }
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+        }
+        .cont-link{
+            text-decoration: none;
+            color: #007185;
+            cursor: pointer;
+        }
+        .container4 {
+            width: 100%;
+            margin-bottom: 8px!important;
+        }
+        .container4::before {
+            display: table;
+            content: "";
+            line-height: 0;
+            font-size: 0;
+        }
+        .container5 {
+            max-width: 226px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .container5 img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .container5::after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        img {
+            vertical-align: top;
+            border: 0;
+        }
+        .container4::after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Principal">
+        <div class="grid_module">
+            <div class="container1">
+                <div class="container2">
+                    <div class="container3">
+                        <a class="cont-link" href="#">
+                            <div class="container4">
+                                <div class="container5">
+                                    <img src="" alt="va una foto">
+                                </div>
+
+                            </div>
+                        </a>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
